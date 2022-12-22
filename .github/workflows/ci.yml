@@ -97,10 +97,10 @@ jobs:
       - uses: coursier/setup-action@v1.3.0
         with:
           jvm: 8
-      - uses: uraimo/run-on-arch-action@v2.4.0
+      - uses: uraimo/run-on-arch-action@v2.1.2
         with:
           arch: aarch64
-          distro: ubuntu22.04
+          distro: ubuntu20.04
 
           # Speeds up builds per the run-on-arch-action README
           githubToken: ${{ github.token }}
