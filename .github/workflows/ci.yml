@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     branches:
-    - main
+    - ubuntu_22.04_aarch_my_repo
     tags:
     - "v*"
   pull_request:
