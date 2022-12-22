@@ -116,7 +116,8 @@ jobs:
 
           run: |
             set -e
-            getconf PAGESIZE
+            echo $(getconf PAGESIZE)
             cd /artifacts
             chmod 755 cs-aarch64-pc-linux
             ./cs-aarch64-pc-linux
+            echo "finish"
