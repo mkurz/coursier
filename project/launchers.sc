@@ -86,7 +86,7 @@ trait Launchers extends CsModule {
           )
         else
           Nil
-      Seq(s"-H:CLibraryPath=$cLibPath", "-H:PageSize=16384") ++ // -H:PageSize=16384 // 4096 // 65536
+      Seq(s"-H:CLibraryPath=$cLibPath", "-H:PageSize=65536") ++ // -H:PageSize=16384 // 4096 // 65536
         extraOpts
     }
   }
